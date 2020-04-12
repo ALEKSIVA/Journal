@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Journal.MainPage" Title="Debt notes">
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Button x:Name="button1"  Text="Debts" Clicked="Button1_Clicked"  CornerRadius="70" BackgroundColor="#FF359886"  BorderWidth="5" BorderColor="#FF7D3A07" FontAttributes="Italic" TextColor="White" FontSize="Large"  HorizontalOptions="Center" WidthRequest="300"/>
+        <Button x:Name="button4"  Text="Statistic" Clicked="Button4_Clicked"  CornerRadius="70" BackgroundColor="#FF359886"  BorderWidth="5" BorderColor="#FF7D3A07" FontAttributes="Italic" TextColor="White" FontSize="Large" HorizontalOptions="Center" WidthRequest="300"/>
+        <Button x:Name="button6"  Text="My data" Clicked="Button6_Clicked"  CornerRadius="70" BackgroundColor="#FF359886"  BorderWidth="5" BorderColor="#FF7D3A07" FontAttributes="Italic" TextColor="White" FontSize="Large" HorizontalOptions="Center" WidthRequest="300"/>
+        <Button x:Name="button5"  Text="Exit" Clicked="Button5_Clicked"  CornerRadius="70" BackgroundColor="#FF359886"  BorderWidth="5" BorderColor="#FF7D3A07" FontAttributes="Italic" TextColor="White" FontSize="Large" HorizontalOptions="Center" WidthRequest="300"/>
+    </StackLayout>
+
+</ContentPage>

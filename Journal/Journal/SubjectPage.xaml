@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Journal.SubjectPage" Title="Your debt info">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid BackgroundColor="LightCyan">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label  Text="Subject" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="0" Grid.ColumnSpan="3"/>
+                <Entry Text="{Binding Subjectt}" x:Name="subjectEntry" Grid.Row="1" Grid.ColumnSpan="3" TextColor="#FF7D3A07"></Entry>
+                <Label  Text="Lessons count" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="2" Grid.ColumnSpan="3"/>
+                <Entry  Text="{Binding Lessons}" TextColor="#FF7D3A07" FontSize="Large" Keyboard="Numeric" x:Name="lessonsEntry"
+                        Grid.Row="3" Grid.ColumnSpan="3"/>
+                <Label  Text="Grade" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="4" Grid.ColumnSpan="3"/>
+                <Entry  Text="{Binding Grade}" TextColor="#FF7D3A07" FontSize="Large" Keyboard="Numeric" x:Name="gradeEntry" 
+                        Grid.Row="5" Grid.ColumnSpan="3"/>
+                <Label  Text="Debt received" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="6" Grid.ColumnSpan="3"/>
+                <DatePicker  Date="{Binding dateGet}" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="7" Grid.ColumnSpan="3"/>
+                <Label  Text="Debt must be fixed" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="8" Grid.ColumnSpan="3"/>
+                <DatePicker  Date="{Binding dateToDo}" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="9" Grid.ColumnSpan="3"/>
+                <Label  Text="" TextColor="#FF7D3A07" FontSize="Small" x:Name="label1" Grid.Row="10" Grid.ColumnSpan="3"/>
+                <Button Text="Delete" CornerRadius="70" BackgroundColor="#FF359886" BorderColor="#FF7D3A07" BorderWidth="5"
+                        WidthRequest="300" TextColor="White" Clicked="Button_Clicked2" Grid.Row="11" Grid.Column="0"></Button>
+                <Button Text="Save" CornerRadius="70" BackgroundColor="#FF359886" BorderColor="#FF7D3A07" BorderWidth="5"
+                        WidthRequest="300" TextColor="White" Clicked="Button_Clicked3" Grid.Row="11" Grid.Column="1"></Button>
+                <Button Text="Share" CornerRadius="70" BackgroundColor="#FF359886" BorderColor="#FF7D3A07" BorderWidth="5"
+                        WidthRequest="300" TextColor="White" Clicked="Button_Clicked" Grid.Row="11" Grid.Column="2"></Button>
+             </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    

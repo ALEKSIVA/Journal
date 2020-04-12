@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Journal.Stat" Title="Statistic" >
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightCyan">
+            <Label  Text="Grade point average:  " TextColor="#FF7D3A07" FontSize="Large" x:Name="lblAverage"/>
+            <Label  Text="Debt amount:  " TextColor="#FF7D3A07" FontSize="Large" x:Name="lblDebtAmount"/>
+            <Label  Text="Amount of lessons:  " TextColor="#FF7D3A07" FontSize="Large" x:Name="lblLessons" />
+            <Label  Text="Latest grade by date:  " TextColor="#FF7D3A07" FontSize="Large" x:Name="lblLastGradeDate"/>
+            <Label  Text="Latest grade:   " TextColor="#FF7D3A07" FontSize="Large" x:Name="lblLastGrade"/>
+            <Button Text="Share" CornerRadius="70" BackgroundColor="#FF359886" BorderColor="#FF7D3A07" BorderWidth="5"
+                    WidthRequest="300" TextColor="White" Clicked="Button_Clicked" x:Name="btnShare"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

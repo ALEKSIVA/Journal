@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Journal.Registration" Title="Data">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="Name" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="0" Grid.ColumnSpan="3"/>
+            <Entry Text="{Binding Name}"  TextColor="#FF7D3A07" x:Name="entryName"></Entry>
+            <Label  Text="Email" TextColor="#FF7D3A07" FontSize="Large" />
+            <Entry  Text="{Binding Email}" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="3" Grid.ColumnSpan="3" x:Name="entryEmail"/>
+            <Label  Text="Phone" TextColor="#FF7D3A07" FontSize="Large"/>
+            <Entry  Text="{Binding Phone}" TextColor="#FF7D3A07" FontSize="Large" Keyboard="Numeric"  x:Name="entryPhone"/>
+            <Button Text="Save" CornerRadius="70" BackgroundColor="#FF359886" BorderColor="#FF7D3A07" BorderWidth="5"
+                        WidthRequest="300" TextColor="White" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

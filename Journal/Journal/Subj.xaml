@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Journal.Subj" Title="Debts">
+    <ContentPage.Content>
+        <StackLayout x:Name="stack" BackgroundColor="LightCyan">
+            <ListView x:Name="DebtList" ItemsSource="{Binding}" ItemSelected="DebtList_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label  Text="{Binding Subjectt}" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="0" Grid.Column="0"/>
+                                    <Label  Text="{Binding Grade}" TextColor="#FF7D3A07" FontSize="Large" Grid.Row="0" Grid.Column="1"/>
+                                    <Label  Text="{Binding dateGet}" TextColor="#FF7D3A07" FontSize="Medium" Grid.Row="0" Grid.Column="2"/>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Add debt" CornerRadius="70" BackgroundColor="#FF359886" BorderColor="#FF7D3A07" BorderWidth="5"
+                    WidthRequest="300" TextColor="White"  Clicked="Bt1_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
